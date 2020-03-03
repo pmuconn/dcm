@@ -1,0 +1,138 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.78 [de] (WinNT; U) [Netscape]">
+</head>
+<body>
+
+<h1>
+<img SRC="EasyFlashLogoHiresTransparent.gif" ></h1>
+
+<h2>
+<u>Draco Cart Maker (DCM) Version 1.0.1</u></h2>
+Easily create EasyFlash multicart images. Simply add the files.
+<p>(c) 2010 by Sascha Bader (sbader01@hotmail.com)
+<h3>
+Disclaimer</h3>
+THE PROGRAM IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT
+ANY WARRANTY. IT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK
+AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+<p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW THE AUTHOR WILL BE LIABLE
+TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL
+DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING
+BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES
+SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE
+WITH ANY OTHER PROGRAMS), EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES.
+<h3>
+Updates and further informations</h3>
+For software updates visit <a href="http://www.sascha-bader.de/html/dcm">http://www.sascha-bader.de/html/dcm</a>
+<br>For hardware informations visit <a href="http://www.skoe.de/easyflash">http://www.skoe.de/easyflash</a>
+<br>To buy the hardware visit <a href="http://for8bits.com">http://for8bits.com</a>
+<br>DCM contains EasyLoader technolgy by ALeX Kazik
+<h3>
+Credits</h3>
+I wish to thank:
+<br>&nbsp; Skoe for the fantastic EasyFlash hardware, the EasyProg software
+and all the enthusiasm.
+<br>&nbsp; ALeX for his brilliant EasyLoader, the bootscreen and the splash
+screen.
+<br>&nbsp; Nils for distribution of the easyflash kits.
+<br>&nbsp; All the others for testing and support.
+<h3>
+Requirements</h3>
+Java 1.6 or (with Java 1.5 the hyperlinks in the about dialog are not working)
+<h3>
+Usage</h3>
+Start with GUI: java -jar dcm.jar
+<br>Start in Batch mode: java -jar dcm.jar &lt;dir to import> [destination.crt]
+<h3>
+Limitations</h3>
+The following cart types are supported:
+<p>&nbsp;&nbsp;&nbsp; Regular
+<br>&nbsp;&nbsp;&nbsp; Ocean
+<p>Because of technical limitations only a single OCEAN cart may be added.
+<br>Unsupported carts are omitted during import.
+<h3>
+Description</h3>
+The table in the main window displays programs and cartridges available
+on the current multicart.
+<br>Use drag &amp; drop or the "+"-button to add programs or cartridges.
+<br>Edit names in the first column of the table by double clicking them.
+<br>Save your cart using the "Save" button.
+<br>Sort the multicarts contents by a mouseclick on the first tablecolumn
+or the "A-Z" button.
+<h3>
+Cart Size (1M/2M)</h3>
+Please make sure to select the right cart size for your hardware.
+<br>For EasyFlash carts currently available this would be "1MB".
+<br>If to many data is added to a cart the filling level display turns
+red while showing a value >100% which indicates that the cart can't be
+programmed to the selcted hardware (1MB/2MB EasyFlash). It can be saved
+with the "Save" button though.
+<h3>
+Screensaver and splashscreen</h3>
+With the "Boot" button an EasyFlash splashscreen can be added. The splashscreen
+appears during initial boot.
+<br>The "Screens." button adds a screensaver that is invoked by EasyLoader
+after a while if no user interaction takes place.
+<h3>
+A-Z button (sort function)</h3>
+The list of carts and programs is sorted automatically if the “A-Z” button
+is active.
+<br>A sorted list is preqequisite for the search function&nbsp; in carts
+menue (EasyLoader).
+<br>Anyway if you require a custom list you may disable the sorting using
+the "A-Z" button.
+<br>If sorting is disabled the up/down buttons become available allowing
+selected items to be moved to another position.
+<h3>
+Banks</h3>
+The "Banks" button opens a view that displays the current bank usage. Each
+bank represents a 8KB chunk of memory.
+<h3>
+Add / + / Drag &amp; Drop</h3>
+Use "+" button, the "Add" menu or Drag&amp;Drop to add new files to the
+cart. Files must have the extension ".crt" or ".prg".
+<br>If a directory is added then all *.crt and *.prg files are added from
+that directory.
+<h3>
+Remove / -</h3>
+Use "-" button or "Remove" menu to remove selected entries from the cart.
+Multiple entries can be selected (press shift or ctrl when selecting).
+<h3>
+Up</h3>
+The "Up" button or menu moves selected entries up one row (only available
+if sort function is disabled).
+<h3>
+Down</h3>
+Use "Down" button / menu to move selected entries down one row (only available
+if sort function is disabled).
+<h3>
+Export</h3>
+The "Export" button / menu exports as much multicart contents as possible
+to the specified directory.
+<h3>
+Load</h3>
+Load an existing easy flash multicart.
+<h3>
+Save</h3>
+With the "Save" button the easyflash cart can be saved to a file.
+<br>Please use the file extension ".crt".
+<h3>
+New</h3>
+Throws away all cart contents.
+<br>Note that current content will be purged without further warnings.
+<br><br>
+<h2>Version history</h2>
+<h3>1.0</h3>
+Initial version
+<h3>1.0.1 </h3>
+Added support of uppercase filenames.
+</body>
+</html>
